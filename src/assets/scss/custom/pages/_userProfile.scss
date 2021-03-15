@@ -1,0 +1,123 @@
+// .drawer{
+//     width : 250!important;
+// }
+
+.userProfile{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    // height: 1000;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    background: $light;
+    padding: 25px;
+
+    .userProfile__header{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+        position: relative;
+        .userProfile__headerMain{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .avatar {
+                vertical-align: middle;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: relative;
+                margin-bottom: 15px;
+                margin-right: 15px;
+                margin-left: 0px;
+                // margin-top: 125px;
+            }
+            .conversation-name{
+                font-size: 1.5rem;
+            }
+        }
+        .userProfile__crossIcon{
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+
+            .chat-search__icons{
+                font-size: 1.1rem;
+                color: $dark;
+            }
+        }
+    }
+    .userProfile__body{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 35px;
+        .userProfile__rating{
+            margin-bottom: 30px;
+            .rating__name{
+                color: $dark;
+            }
+            .rating__number{
+                color: rgb(1, 173, 173);
+            }
+        }
+        .userProfile__rows{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid $light-shadow;
+            padding: 7px 0;
+            align-items: center;
+            justify-content: space-between;
+            .userProfile__name{
+                font-size: 0.9rem;
+                
+            }
+            .avatar {
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: relative;
+                margin-bottom: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+                // margin-top: 125px;
+            }
+            .userProfile__number{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .userProfile__footer{
+        margin-top: 30px;
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: auto;
+        .footerDiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .chat-search__icons{
+                font-size: 1.4rem;
+                color: red;
+                margin-top: -18px;
+            }
+            .footerDiv__name{
+                font-size: 1rem;
+                color: red;
+                margin-left: 10px;
+            }
+        }
+    }
+
+}

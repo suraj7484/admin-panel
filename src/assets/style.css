@@ -1,0 +1,34 @@
+.paddingLink > li > a {
+  padding-left: 1vw;
+}
+
+.paddingLink > li:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.paddingLink > li > a {
+  margin: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdownMarginLeft {
+  margin-left: 250px;
+}
+
+.alignIconText {
+  display: flex;
+  align-items: center;
+}
+
+.minWidthFaq {
+  min-width: 100%;
+}
+
+.uploadPhotoWidth {
+  width: 15vw;
+}

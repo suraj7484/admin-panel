@@ -1,0 +1,80 @@
+import React, { useState } from "react"
+import {
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  InputGroupAddon,
+  InputGroup,
+} from "reactstrap"
+import PropTypes from "prop-types"
+
+// react-hook-form
+const ModalSendEmail = ({ isOpen, toggle }) => {
+  // const [email, setEmail] = useState("")
+  // const handleChange = value => setEmail(value)
+
+  return (
+    <Modal className="modal-dialog-centered" isOpen={isOpen} toggle={toggle}>
+      <ModalHeader
+        toggle={toggle}
+        close={
+          <button className="close" onClick={toggle}>
+            &times;
+          </button>
+        }
+      >
+        Send by Email
+      </ModalHeader>
+      <ModalBody>
+        <Form>
+          <FormGroup>
+            <Label>Enter email</Label>
+            <Input type="text" placeholder="Email" />
+          </FormGroup>
+          <FormGroup>
+            <Label>Choose currency</Label>
+            <Input type="select" defaultValue="default">
+              <option value="default" disabled hidden>
+                Select your option
+              </option>
+              <option>USD United States Dollar</option>
+              <option>EUR European Euro</option>
+              <option>CNY Chinese Yuan</option>
+            </Input>
+          </FormGroup>
+          <FormGroup>
+            <Label>Payment amount</Label>
+            <Input type="number" />
+          </FormGroup>
+          <FormGroup>
+            <Label>
+              Payment note <span className="text-muted">(optional)</span>
+            </Label>
+            <Input type="textarea" />
+          </FormGroup>
+        </Form>
+      </ModalBody>
+      <ModalFooter>
+        <Button color="secondary" onClick={toggle}>
+          Cancel
+        </Button>
+        <Button color="primary" onClick={toggle}>
+          Send
+        </Button>
+      </ModalFooter>
+    </Modal>
+  )
+}
+
+ModalSendEmail.propTypes = {
+  isOpen: PropTypes.bool,
+  toggle: PropTypes.func,
+}
+
+export default ModalSendEmail

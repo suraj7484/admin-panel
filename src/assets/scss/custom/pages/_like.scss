@@ -1,0 +1,15 @@
+.containerRight{
+    display: flex;
+    flex-direction: column;
+
+    .message__row1{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .message__me{
+        .conversation-name{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

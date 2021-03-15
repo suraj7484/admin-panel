@@ -1,0 +1,25 @@
+.table td.fit,
+.table th.fit {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.caret-down {
+  margin-top: 2px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px !important;
+}
+
+.flags {
+  width: 30% !important;
+  height: 100% !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.transaction {
+  height: calc(100vh - (70px + 24px + 43px + 43px));
+  overflow-y: auto;
+}
